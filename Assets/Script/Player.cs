@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
 
     Vector3 telpos0 = Vector3.zero; // 열기구 위치
     Vector3 telpos1 = Vector3.zero;
+
     public bool iswall1 = false;
     public bool iswall2 = false;
 
@@ -82,6 +83,7 @@ public class Player : MonoBehaviour
 
         //추가
         audioSource = GetComponent<AudioSource>();
+        Time.timeScale = 1;
     }
 
     private void OnTriggerEnter2D(Collider2D col) //is trigger일때 체크되어 코드 실행법
@@ -320,12 +322,12 @@ public class Player : MonoBehaviour
 
         if (isladder)//flag에 in했을때
         {
-            if (Input.GetKey(KeyCode.UpArrow)) //방향기 위를 누를때 
+            if (Input.GetKey(KeyCode.W)) //방향기 위를 누를때 
             {
                 rigid.gravityScale = 0; //중력을 0으로 하고
                 transform.Translate(Vector2.up * claim * Time.deltaTime); //위 방향으로 이동
             }
-            if (Input.GetKey(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.S))
             {
                 rigid.gravityScale = 0; //중력을 0으로 하고 
                 transform.Translate(Vector2.down * claim * Time.deltaTime); //아래 방향으로 이동
@@ -336,7 +338,7 @@ public class Player : MonoBehaviour
             rigid.gravityScale = 4f;
         }
  
-        if (Input.GetKey(KeyCode.LeftArrow))    //왼쪽화살표 입력시 실행함
+        if (Input.GetKey(KeyCode.A))    //왼쪽화살표 입력시 실행함
         {
             //추가
             //넣으면망함
@@ -347,12 +349,12 @@ public class Player : MonoBehaviour
 
             transform.Translate(Vector2.left * move * Time.deltaTime);
         }
-        else if (Input.GetKeyUp(KeyCode.LeftArrow))
+        else if (Input.GetKeyUp(KeyCode.A))
         {
             anim.Play("idle");
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))    //오른쪽화살표 입력시 실행함
+        if (Input.GetKey(KeyCode.D))    //오른쪽화살표 입력시 실행함
         {
             //추가
             //넣으면망함
@@ -363,7 +365,7 @@ public class Player : MonoBehaviour
 
             transform.Translate(Vector2.right * move * Time.deltaTime);
         }
-        else if (Input.GetKeyUp(KeyCode.RightArrow))
+        else if (Input.GetKeyUp(KeyCode.D))
         {
             anim.Play("idle");
         }

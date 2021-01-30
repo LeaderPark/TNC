@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StageStar : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class StageStar : MonoBehaviour
                     Debug.Log("1º°");
                     Time.timeScale = 0;
                     GameManager.instance.oneStarClear = true;
+                    Invoke("selectScene", 2);
                 }
 
                 if (star1 <= player.currentHP && player.currentHP < star2)
@@ -51,6 +53,7 @@ public class StageStar : MonoBehaviour
                     Debug.Log("2º°");
                     Time.timeScale = 0;
                     GameManager.instance.twoStarClear = true;
+                    Invoke("selectScene", 2);
                 }
 
                 if (star2 <= player.currentHP && player.currentHP <= 100)
@@ -61,9 +64,15 @@ public class StageStar : MonoBehaviour
                     Debug.Log("3º°");
                     Time.timeScale = 0;
                     GameManager.instance.threeStarClear = true;
+                    SceneManager.LoadScene("select");
                 }
             }
         }
+    }
+
+    void selectScene()
+    {
+
     }
 
     private void OnTriggerEnter2D(Collider2D col)

@@ -10,6 +10,7 @@ public class StageClear : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         if (GameManager.instance.oneStarClear == true)
         {
             oneStar.gameObject.SetActive(true);

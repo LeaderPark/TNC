@@ -797,7 +797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &274240622
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1429,7 +1429,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 912903458054132539, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
+  m_Sprite: {fileID: -443691061967205678, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1468,7 +1468,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2.93}
+  m_Size: {x: 1, y: 10.93}
   m_Direction: 0
 --- !u!61 &482189013
 BoxCollider2D:
@@ -3037,7 +3037,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -366}
-  m_SizeDelta: {x: 1108.98, y: 196.19}
+  m_SizeDelta: {x: 1194.28, y: 196.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1216344167
 MonoBehaviour:
@@ -3051,7 +3051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46cacfa83ffb0d84086302b63f635192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timetext: {fileID: 1216344168}
+  timetext: {fileID: 1719852238}
 --- !u!114 &1216344168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3085,7 +3085,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Clear Time : 00'
+  m_Text: 'Clear Time : 000'
 --- !u!222 &1216344169
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6948,8 +6948,8 @@ Tilemap:
   - first: {x: 40, y: 9, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 11
-      m_TileSpriteIndex: 5
+      m_TileIndex: 12
+      m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7679,9 +7679,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 6c0266dc869b01d4b8526fdd3f122888, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 08efed9d509fd2f4b83d8089b7834cc9, type: 2}
-  - m_RefCount: 16
+  - m_RefCount: 15
     m_Data: {fileID: 11400000, guid: a520adf06706d2b44b4b9131da560f20, type: 2}
-  - m_RefCount: 81
+  - m_RefCount: 82
     m_Data: {fileID: 11400000, guid: f04211462da929840876ee0fdac38dda, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: 9595d72b4b610ed41ad4cce08e12192a, type: 2}
@@ -7708,7 +7708,7 @@ Tilemap:
     m_Data: {fileID: -6279926557790218825, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
   - m_RefCount: 18
     m_Data: {fileID: 8321718614120830890, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
-  - m_RefCount: 16
+  - m_RefCount: 15
     m_Data: {fileID: -443691061967205678, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
   - m_RefCount: 51
     m_Data: {fileID: 1388168630121815805, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
@@ -7716,7 +7716,7 @@ Tilemap:
     m_Data: {fileID: -4975680876428945499, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
   - m_RefCount: 18
     m_Data: {fileID: 5069557700046387992, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
-  - m_RefCount: 81
+  - m_RefCount: 82
     m_Data: {fileID: -2361020345047657259, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
   - m_RefCount: 16
     m_Data: {fileID: 4732285787822998328, guid: 443013c93c51fca428690c0c3bb83ac2, type: 3}
